@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.PayFragment"
+    android:background="#F3F3F3">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_marginHorizontal="7dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="25dp"
+        app:cardCornerRadius="0dp"
+        app:contentPadding="5dp">
+
+
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:id="@+id/b1"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/money"
+                tools:ignore="MissingConstraints" />
+            <RelativeLayout
+                android:id="@+id/b2"
+                android:layout_below="@id/b1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pBalance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/insta5"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/a2"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_toRightOf="@+id/a1"-->
+<!--                        android:text="0 Руб."-->
+<!--                        android:textColor="@color/insta2"-->
+<!--                        android:textSize="22sp"-->
+<!--                        android:textStyle="bold" />-->
+                </RelativeLayout>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/b3"
+                android:layout_below="@id/b2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Введите сумму для пополнения" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_below="@id/b3"
+                android:layout_gravity="center"
+                android:id="@+id/b4"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/pay"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/b4"
+                android:id="@+id/button_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Пополнить"
+                style="@style/CustomButton"
+                android:textColor="@color/white"/>
+
+<!--            <Button-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_below="@id/button_pay"-->
+<!--                android:id="@+id/button_pay1"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Проверка"-->
+<!--                app:backgroundTint="@null"-->
+<!--                android:background="@drawable/insta"-->
+<!--                android:textColor="@color/white"/>-->
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                app:cornerRadius="0dp"
+                app:strokeColor="@color/insta5"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/button_hist"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="История заказов"/>
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>

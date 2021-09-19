@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="7dp"
+    android:layout_marginTop="5dp"
+    app:cardCornerRadius="0dp"
+    app:strokeColor="#E4E4E4"
+    app:strokeWidth="1dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="10dp"
+        android:layout_marginBottom="5dp">
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/h1"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:maxLines="1"-->
+        <!--            android:textColor="@color/insta2"-->
+        <!--            android:textStyle="bold"-->
+        <!--            android:text="Нормер заказа:"/>-->
+        <TextView
+            android:id="@+id/hId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="10dp"
+            android:maxLines="1"
+            android:textColor="@color/insta5"
+            android:textStyle="bold"
+            android:text="№00000"
+            android:textSize="17sp"/>
+
+
+
+        <View
+            android:id="@+id/h0"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/hId"
+            android:layout_marginTop="10dp"
+            android:background="#BFD5D5D5" />
+        <TextView
+            android:id="@+id/h2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/h0"
+            android:layout_marginTop="10dp"
+            android:maxLines="1"
+            android:text="Вид :"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/hType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/h0"
+            android:layout_toRightOf="@+id/h2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:maxLines="1"
+            android:text="Лайки"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_below="@+id/h0"
+            android:id="@+id/hDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:maxLines="1"
+            android:text="00/00/00"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_alignParentEnd="true"/>
+
+        <TextView
+            android:id="@+id/h3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/h2"
+            android:layout_marginTop="10dp"
+            android:maxLines="1"
+            android:text="Ссылка:"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/hLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/h3"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:maxLines="1"
+            android:text="gresgreshrthrshrshhsfdhfdhsfdhfhfdhfsdhfshs"
+            android:textColor="@color/insta5"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+
+        <TextView
+            android:id="@+id/h4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hLink"
+            android:layout_marginTop="10dp"
+            android:maxLines="1"
+            android:text="Кол-во:"
+            android:textSize="15sp"/>
+        <TextView
+            android:textSize="15sp"
+            android:id="@+id/hCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hLink"
+            android:layout_toRightOf="@+id/h4"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:maxLines="1"
+            android:text="56 Шт."
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/h6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hLink"
+            android:layout_toLeftOf="@+id/hPrice"
+            android:layout_marginTop="10dp"
+            android:maxLines="1"
+            android:text="Стоимость:"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_alignParentEnd="true"
+            android:textSize="15sp"
+            android:id="@+id/hPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hLink"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:maxLines="1"
+            android:text="56 Руб."
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <!--        <View-->
+        <!--            android:id="@+id/d"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="1dp"-->
+        <!--            android:layout_below="@+id/h4"-->
+        <!--            android:layout_marginTop="15dp"-->
+        <!--            android:background="#BFD5D5D5" />-->
+
+        <!--        <RelativeLayout-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@+id/d"-->
+        <!--            android:layout_alignParentEnd="true">-->
+
+        <!--            <com.google.android.material.button.MaterialButton-->
+        <!--                app:cornerRadius="0dp"-->
+        <!--                android:id="@+id/hRepeat"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="Повторить"-->
+        <!--                />-->
+
+        <!--            <com.google.android.material.button.MaterialButton-->
+        <!--                android:id="@+id/hSend"-->
+        <!--                style="@style/Widget.MaterialComponents.Button.OutlinedButton"-->
+        <!--                android:layout_width="40dp"-->
+        <!--                android:layout_height="40dp"-->
+        <!--                android:padding="0dp"-->
+        <!--                android:background="@drawable/ic_message"-->
+        <!--                android:layout_marginLeft="5dp"-->
+        <!--                android:layout_marginTop="5dp"-->
+        <!--                android:layout_toRightOf="@+id/hRepeat"-->
+        <!--                app:backgroundTint="@null"-->
+        <!--                app:strokeWidth="2dp"-->
+        <!--                app:strokeColor="@color/insta2"/>-->
+        <!--        </RelativeLayout>-->
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

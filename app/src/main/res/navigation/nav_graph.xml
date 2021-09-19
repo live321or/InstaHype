@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.likesmm.instahype.welcome.WelcomeFragment"
+        android:label="WelcomeFragment"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_welcomeFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_activity2"
+            app:destination="@id/activity2" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.likesmm.instahype.welcome.RegistrationFragment"
+        android:label="RegistrationFragment" >
+        <action
+            android:id="@+id/action_registrationFragment_to_activity2"
+            app:destination="@id/activity2" />
+        <action
+            android:id="@+id/action_registrationFragment_to_policyFragment"
+            app:destination="@id/policyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.likesmm.instahype.welcome.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_activity2"
+            app:destination="@id/activity2" />
+    </fragment>
+    <activity
+        android:id="@+id/activity2"
+        android:name="com.likesmm.instahype.main.Activity"
+        android:label="activity"
+        tools:layout="@layout/activity" />
+    <fragment
+        android:id="@+id/policyFragment"
+        android:name="com.likesmm.instahype.welcome.PolicyFragment"
+        android:label="fragment_policy"
+        tools:layout="@layout/fragment_policy" >
+        <argument
+            android:name="resId"
+            app:argType="integer"
+            android:defaultValue="1" />
+    </fragment>
+</navigation>

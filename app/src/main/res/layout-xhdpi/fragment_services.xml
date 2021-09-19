@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:id="@+id/rootServices">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_marginHorizontal="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:elevation="25dp"
+        app:cardCornerRadius="0dp"
+        app:contentPadding="5dp"
+        app:strokeWidth="1dp">
+
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/a1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Баланс: "
+                            android:textColor="@color/insta5"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/balance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/a1"
+                            android:text="0 Руб."
+                            android:textColor="@color/insta5"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <!--                        <Button-->
+                        <!--                            android:id="@+id/a3"-->
+                        <!--                            android:layout_width="24dp"-->
+                        <!--                            android:layout_height="24dp"-->
+                        <!--                            android:layout_marginLeft="15dp"-->
+                        <!--                            android:layout_marginTop="8dp"-->
+                        <!--                            android:layout_toRightOf="@id/balance"-->
+                        <!--                            android:background="@drawable/growth"-->
+                        <!--                            app:backgroundTint="@null" />-->
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="1dp"
+                    android:background="#3C3F41" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Вид "
+                    android:textSize="12sp" />
+                <!--            <com.google.android.material.textfield.TextInputLayout-->
+                <!--                android:id="@+id/sType"-->
+                <!--                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                app:boxBackgroundColor="@color/white"-->
+                <!--                app:endIconMode="dropdown_menu"-->
+                <!--                app:boxCornerRadiusBottomStart="0dp"-->
+                <!--                app:boxCornerRadiusBottomEnd="0dp"-->
+                <!--                app:boxCornerRadiusTopStart="0dp"-->
+                <!--                app:boxCornerRadiusTopEnd="0dp">-->
+
+                <!--                <AutoCompleteTextView-->
+                <!--                    android:id="@+id/categoryType"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:enabled="false"-->
+                <!--                    android:textColor="@color/black"-->
+                <!--                    android:textSize="16sp" />-->
+                <!--            </com.google.android.material.textfield.TextInputLayout>-->
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="5dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#1E000000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Ссылка"
+                    android:textSize="12sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/CustomTextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:paddingTop="10dp"
+                        android:hint="https://www.instagram.com/example/example"
+                        android:id="@+id/sLink"
+                        android:inputType="text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingHorizontal="5dp">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cCount"
+                        android:layout_width="130dp"
+                        android:layout_height="45dp"
+                        app:cardCornerRadius="0dp"
+                        app:strokeColor="@color/insta5"
+                        app:strokeWidth="3dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+
+                                android:id="@+id/nCount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerInParent="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="17dp"
+                                android:text="Кол-во:"
+                                android:textColor="@color/insta5"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:textSize="12sp"
+                                android:id="@+id/sCount"
+                                android:layout_width="62dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="3dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_toEndOf="@+id/nCount"
+                                android:layout_toRightOf="@+id/nCount"
+                                android:digits="0123456789"
+                                android:gravity="center_horizontal"
+                                android:inputType="numberDecimal"
+                                android:maxLength="1000"
+                                android:maxLines="1"
+                                android:text="0"
+                                android:textAlignment="center"
+                                android:textStyle="bold"
+                                android:imeOptions="actionDone" />
+
+                        </RelativeLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="130dp"
+                        android:layout_height="45dp"
+                        app:cardCornerRadius="0dp"
+                        app:strokeColor="@color/insta5"
+                        app:strokeWidth="3dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/sPrice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="Цена: 0 Руб."
+                                android:textColor="@color/insta5"
+                                android:textStyle="bold"
+                                android:textSize="13sp"/>
+
+                        </RelativeLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#3C3F41" />
+
+                <TextView
+                    android:id="@+id/about1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Описание выбранной :"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/about2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Минимальный заказ:"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/about3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Максимальный заказ: 5000"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/about4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="Пример ссылки: https://www.instagram.com/example/example" />
+                <TextView
+                    android:id="@+id/about5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="- Для исполнения заказа ваш аккаунт должен быть открыт, в нем должны содержаться публикации и установлен аватар." />
+
+                <!--            <TextView-->
+                <!--                android:id="@+id/about5"-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:text="Пример ссылки:" />-->
+
+
+                <!--            <Button-->
+                <!--                style="@style/CustomButton"-->
+                <!--                android:id="@+id/button_first2"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_marginTop="20dp"-->
+                <!--                android:text="@string/next" />-->
+            </LinearLayout>
+            <Button
+                android:layout_alignParentBottom="true"
+                android:id="@+id/next"
+                style="@style/CustomButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/next"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

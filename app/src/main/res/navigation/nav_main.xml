@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/firstFragment">
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.likesmm.instahype.main.ServicesFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_services" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/payFragment"
+        android:name="com.likesmm.instahype.main.PayFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_pay" >
+        <action
+            android:id="@+id/action_payFragment_to_payHistoryFragment"
+            app:destination="@id/payHistoryFragment" />
+        <action
+            android:id="@+id/action_payFragment_to_webViewFragment"
+            app:destination="@id/webViewFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.likesmm.instahype.main.BlankFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_blank" />
+<!--    <dialog-->
+<!--        android:id="@+id/confirmationDialogFragment"-->
+<!--        android:name="com.likesmm.instahype.main.ConfirmationDialogFragment"-->
+<!--        android:label="ConfirmationDialogFragment" />-->
+    <fragment
+        android:id="@+id/payHistoryFragment"
+        android:name="com.likesmm.instahype.main.PayHistoryFragment"
+        android:label="PayHistoryFragment" />
+    <fragment
+        android:id="@+id/webViewFragment"
+        android:name="com.likesmm.instahype.main.WebViewFragment"
+        android:label="WebViewFragment" />
+
+</navigation>

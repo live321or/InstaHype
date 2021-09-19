@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FD3557</color>
+    <color name="purple_500">#FD3557</color>
+    <color name="purple_700">#7B1FA2</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="insta4">#d01a76</color>
+    <color name="insta5">#1f5fb1</color>
+    <color name="insta1">#FE6163</color>
+    <color name="insta2">#ffFD3557</color>
+    <color name="insta3">#EE539E</color>
+</resources>

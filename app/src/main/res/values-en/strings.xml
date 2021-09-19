@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Insta Hype</string>
+    <string name="action_settings">Settings</string>
+    <!--Pref-->
+
+    <string name="pref_file">com.likesmm.preference_file</string>
+    <string name="pref_login_status">com.likesmm.preference_login_status</string>
+    <string name="pref_user_cookie">com.likesmm.preference_user_cookie</string>
+    <string name="pref_user_email">com.likesmm.preference_user_email</string>
+    <string name="pref_user_balance">com.likesmm.preference_user_balance</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="registration">Sign up</string>
+    <string name="login">Sign in</string>
+    <string name="previous">Продолжить</string>
+
+    <string name="hello_first_fragment">Welcome to InstaHype!</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="next">Заказать</string>
+    <string name="text_label_1">Услуги</string>
+    <string name="text_label_2">"Баланс"</string>
+    <string name="text_label_3">Связь</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="social_label"><font style="bold" size="42">Соц. сеть:</font></string>
+    <string name="type_label"><font style="bold" size="42">Вид :</font></string>
+    <string name="link"><font size="45">Сcылка</font></string>
+    <string name="count"><font size="45">Количесво:</font></string>
+    <string name="Balance"><font size="45">Ваш баланс:</font></string>
+    <!-- Menu name -->
+    <string-array name="menuNames">
+        <item>Пополнить баланс</item>
+        <item>История заказов</item>
+        <item>Цены</item>
+        <item>Партнерская программа</item>
+        <item>Помощь</item>
+        <item>Сменить пароль</item>
+    </string-array>
+    <!-- Список соц. Сетей -->
+    <string-array name="Social">
+        <item>Инстаграм</item>
+        <item>Tik Tok</item>
+        <item>Телеграм</item>
+        <item>Вконтакте</item>
+        <item>Твиттер</item>
+        <item>Facebook</item>
+        <item>Twitch</item>
+    </string-array>
+    <!-- Inst -->
+    <string-array name="Inst">
+        <item>Лайки (0.30руб/1шт)</item>
+        <item>Подписчики (0.35руб/1шт)</item>
+        <item>Подписчики VIP (0.50руб/1шт)</item>
+        <item>Просмотры видео   (0.25руб/1шт)</item>
+        <item>Просмотры историй   (0.33руб/1шт)</item>
+        <item>Охват публикаций  (0.23руб/1шт)</item>
+        <item>Сохранения  (0.28руб/1шт)</item>
+        <item>Коментарии  (0.50руб/1шт)</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="r_lable">Заполните поля для регистрации</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+</resources>
